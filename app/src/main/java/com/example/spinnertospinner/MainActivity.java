@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 List<JenisHpPojo> temp = new ArrayList<>();
                 for (JenisHpPojo jenisHpPojo:jenisHpPojos) {
-                    if (jenisHpPojo.getIdMerk().equals(i+"")){
+                    if (jenisHpPojo.getIdMerk().equals(merkHpPojos.get(i).getId())){
                         temp.add(jenisHpPojo);
                     }
                 }
